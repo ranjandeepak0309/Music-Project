@@ -1,0 +1,1054 @@
+body{
+	margin: 0px;
+}
+.mix-blue{
+	background-image: linear-gradient(to right, #076a89, #726d94 76%);
+}
+
+.text-dec a{
+	text-decoration: none;
+}
+
+/*----------------------------------------------Header main properties------------------------------------------*/
+.body-header{
+	background-color:#101f4c;
+	width: 100%;
+	height: 80px;
+}
+#header-1{
+	position: fixed;
+	z-index: 5;
+}
+#header-2{
+	position: fixed;
+    top: 80px;
+    z-index: 5;
+}
+
+/*--------------------------------------------------------Main-------------------------------------------------------------*/
+
+main{
+	display: inline-block;
+	width: 75%;
+}
+
+#main-div{
+	background-image: linear-gradient(to right, #076a89, #726d94 76%);
+	padding-top: 156px;
+}
+
+/*--------------------------------------------Aside main properties-------------------------------------------------------------*/
+
+aside{
+	display: inline-block;
+	position: fixed;
+	right: 0;
+	top: 160px;
+    width: 25%;
+   	height:auto;
+    vertical-align: top;
+    margin-left: -4px;
+    overflow-y: auto;
+    height: 78%;
+
+}
+
+aside::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+
+aside h2{
+	margin:0px;
+	padding: 0px;
+	color: white;
+}
+
+
+/*------------------------------Section properties-----------------------------------------------------------------------*/
+
+section{
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 4px;
+	
+}
+.section-heading{
+	width: auto;
+    padding: 6px 49px;
+    font-weight: 500;
+}
+
+.section-heading span{
+	font-size: 40px;
+    color:white;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+/*--------------------properties for things inside header 1-------------------------------------------------------------------*/
+
+#logo{
+	width: 74%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 4px;
+    padding-left: 103px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+
+#logo-image{
+    width: 8%;
+    margin-top: 6px;
+    padding-top: 3px;
+
+}
+
+#logo-name{
+    color: #858dc7;
+    margin-top: 14px;
+    width: 35%;
+    text-align: left;
+    font-size: 2.0rem;
+}
+
+#logo img{
+	width: 50px;
+}
+
+
+
+/*-----------------------------------properties inside header 2----------------------------------------------------------------------------------*/
+#profile{
+	width: 52%;
+    height: 100%;
+    margin: auto;
+    padding-top: 4px;
+    background-color:#101f4c;
+    border-bottom-right-radius: 73px;
+    border-bottom-left-radius: 73px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#profile-image{
+	width: 162px;
+}
+
+#profile-image img{
+	width: 50px;
+	border-radius: 50%;
+}
+
+#search-span{
+    margin-top: 11px;
+}
+#search-span input{
+	border-radius: 50px;
+	background-color: #25868a54;
+	border: 1px solid #1b2a70;
+	color: white;
+}
+::placeholder { 
+  color: white;
+  opacity: 1; 
+}
+#bell-icon{
+	display: inline-block;
+    color: white;
+    width: 162px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+/*---------------------------------------------------Aside section----------------------------------------------------------*/
+
+.queue-flex{
+	width: 100%;
+	height: auto;
+}
+
+.aside-playlist{
+	height: 60px;
+	width: 85%;
+	position: relative;
+	margin-top: 12px;
+	margin-left: 10px;
+	
+}
+
+.aside-playlist h3{
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font-family: monospace;
+}
+.aside-playlist h4{
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font-family: monospace;
+	font-size: 0.8rem;
+}
+
+.heart{
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+}
+
+.aside-playlist img{
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	top: 0;
+	left: 0;
+}
+
+.aside-playlist:hover{
+	box-shadow: 0 0 10px 2px #74ADC8;
+}
+
+.heading-container{
+	margin-right: 30px;
+}
+
+
+/*-----------------------------------------------carousel-section------------------------------------------------------------*/
+
+.main-carousel{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	width: 74%;
+	height: auto;
+	justify-content: center;
+	
+}
+
+.cover-image{
+	 max-width: 160px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+    /*position: relative;*/
+}
+
+.cover-image img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.hover-effect:hover div{
+	opacity: 0.6;
+	transform: scale(0.8);
+}
+
+.hover-effect div:hover{
+	opacity: 1.0;
+	transform: scale(1.1);
+}
+
+/*-----------------------------Artist section----------------------------------------------------------------------------------------------*/
+
+.artist-image{
+	height: 165px;
+	max-width: 160px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: relative;
+}
+
+.artist-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.artist-details{
+	 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:0;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.artist-details p{
+	padding-right: 20px;
+}
+.artist-image:hover {
+    box-shadow: 0 0 20px #74ADC8;
+   
+}
+
+.artist-image:hover .artist-details {
+    background-color:transparent;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+
+
+}
+
+.artist-image:hover img{
+	filter: blur(4px);
+}
+
+/*----------------------------------------------------Latest release section------------------------------------------------*/
+
+.play-song{
+	height: 150px;
+	/*max-width: 160px;*/
+	width: 250px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /*border:1px solid white;*/
+    border-style: outset;
+    border-color: #2f33da;
+}
+
+.play-button{
+	position: absolute;
+    left: 0;
+    top: 21px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+    padding-top: 33px;
+    font-size: x-large;
+    color: white;
+    text-align: left;
+    padding-left: 37px;
+}
+
+.play-song:hover .play-button{
+	display: block;
+}
+
+.play-song:hover{
+	box-shadow: 0 0 20px 2px #74ADC8;
+	 background-color: #16232f52;
+}
+
+.song-image {
+   position: absolute;
+    width: 110px;
+    overflow: hidden;
+    left: 4px;
+    top: 23px;
+}
+
+.play-song h3,h4{
+	text-align: center;
+    color: white;
+    margin-left: 72px;
+    font-family: monospace;
+}
+
+.song-image img {
+    width: 78%;
+}				/*------------------------------------------Dropdown list-----------------------------------------------*/
+
+
+.bars{
+	color: white;
+	margin: 0;
+	margin-right: 5%;
+	text-align: right;
+}
+.bars i{
+	font-size: 1.4rem;
+
+}
+
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+	list-style: none;
+	margin: 0.2rem 0.2rem;
+    
+    padding: 0px 0.8rem;
+
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+    text-align: left;
+    width: 40%;
+	margin-top: -15px;
+	background-color: white;
+	color: blue;
+	font-family: monospace;
+	z-index: 3;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+	
+}
+
+.dropdown-list li a{
+	text-decoration: none;
+	color: white;
+}
+
+/*---------------------------------------Bottom music player----------------------------------------------------------------------*/
+
+#floating-div{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 95px;
+	background-color: #101f4c;
+	display: none;
+}
+
+#floating-div:target{
+	display: block;
+}
+
+#floating-div a{
+	text-decoration: none;
+	text-align: right;
+}
+
+#floating-div a h3{
+	color: white;
+	margin-right: 14px;
+}
+						/*------------------------player icon on player-------------------*/
+#player{
+	padding: 0px;
+    list-style: none;
+    width: 313px;
+    margin: auto;
+    margin-top: -45px;
+}
+#player li{
+	display: inline;
+	margin: 0px 25px 25px 0px;
+}
+
+#player li i{
+    padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+						/*------------------control buttons on player---------------------*/
+#control-button{
+	padding: 0px;
+    list-style: none;
+    text-align: right;
+    margin-top: -28px;
+    margin-right: -21px;
+}
+
+#control-button li{
+	display: inline;
+	margin: 0px 25px 25px 0px;
+}
+
+#control-button li i{
+    padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+
+						/*--------------------Slider on player---------------------------*/
+
+
+#slider{
+	padding: 0px;
+    width: 370px;
+    margin: auto;
+    margin-top: -42px;
+    color: white;
+}
+
+#slider input{
+	width: 256px;
+}
+
+
+#play-image{
+	width: 61px;
+    margin-top: -64px;
+    margin-left: 16px;
+    position: static;
+}
+
+#play-image img{
+	width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0 0 2px 2px white;
+}
+
+/*---------------------------------------------------Stations---------------------------------------------------------*/
+
+.station-image{
+	height: 110px;
+	max-width: 112px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: relative;
+}
+
+.station-image img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.station-details{
+	 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:0;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.station-details p{
+	padding-right: 21px;
+}
+.station-image:hover {
+    box-shadow: 0 0 20px #74ADC8;
+   
+}
+
+.station-image:hover .station-details {
+    background-color:#0008278c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+	font-family: monospace;
+
+}
+
+/*------------------------------------------Moood section-----------------------------------------------------*/
+
+.mood-image{
+	width: 210px;
+    height: 125px;
+	overflow: hidden;
+	position: relative;
+	 margin: 10px;
+}
+
+.mood-image img{
+	height: 100%;
+	width: 100%;
+	transition: 0.6s ease-in-out;
+}
+
+.mood-details{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 30px;
+	background-color: #00000052;
+	font-family: monospace;
+}
+
+.mood-image:hover img{
+	transform: scale(1.3);
+}
+
+/*----------------------------------------Latest English/Hindi Section--------------------------------------*/
+
+.song-tile{
+	height: 200px;
+	width: 153px;
+	margin:10px;
+	/*border:1px dashed white;*/
+	position: relative;
+}
+
+.play-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	text-align: center;
+	color: white;
+	padding-top: 56px;
+    font-size: xx-large;
+    /*transition: 1s ease-in-out;*/
+}
+
+.song-tile:hover .play-icon{
+	display: block;
+}
+
+.song-tile:hover{
+	opacity: 0.7;
+}
+
+.song-tile h3{
+	margin:0px;
+	padding-bottom: 0px;
+	color: white;
+	text-align: left;
+}
+
+.song-tile h4{
+	margin:0px;
+	padding-bottom: 0px;
+	color: white;
+	text-align: left;
+}
+
+.song-tile-image{
+	height: 70%;
+	width: 100%;
+}
+
+.song-tile-image img{
+	width: 100%;
+	height: 100%;
+}
+
+/*---------------------------------------------------------Media queries-------------------------------------------------*/
+
+@media screen and (max-width: 950px)
+{
+	#logo{
+		padding: 7px 0px 0px 0px;
+	}
+
+	#logo-image{
+		width: 70px;
+	}
+
+	#logo img{
+		width:45px;
+	}
+
+	#profile-image{
+		width: 100px;
+	}
+
+	#profile-image img{
+		width: 40px;
+		border-radius: 50%;
+	}
+
+	#bell-icon{
+		width: 100px;
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	#search-span{
+		width: 100px;
+		margin-left: 25px;
+	}
+
+	#search-span input{
+		width: 110px;
+	}
+}
+
+
+@media screen and (max-width: 850px)
+{
+	aside{
+		display: block;
+		width: 80%;
+		margin: auto;
+		position: static;
+	}
+	main{
+		display: block;
+		width: 100%;
+	}
+
+	.queue-flex{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.aside-playlist{
+		height: 60px;
+		width: 260px;
+		position: relative;
+		margin: 4px 14px;
+}
+
+}
+
+@media screen and (max-width: 760px)
+{
+	#play-image{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px)
+{
+	html{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 700px){     /*for header */
+	
+	
+	#logo{
+		padding: 7px 0px 0px 40px;
+	}
+
+	#logo-image{
+		width: 50px;
+	}
+
+	#logo img{
+		width:35px;
+	}
+
+	#profile-image{
+		width: 80px;
+	}
+
+	#profile-image img{
+		width: 40px;
+		border-radius: 50%;
+	}
+
+	#bell-icon{
+		width: 80px;
+		text-align: center;
+		padding-top: 12px;
+	}
+
+	#search-span{
+		width: 80px;
+		margin-left: 50px;
+	}
+
+	#search-span input{
+		width: 76px;
+	}
+
+}
+
+@media screen and (max-width: 700px) /* for bottom music player*/
+{	
+	#control-button{
+		margin: -6px -21px 0px 0px;
+	}
+	#control-button li i{
+		font-size: 2rem;
+	}
+	#slider{
+		padding: 0px 0px 0px 68px;
+	}
+
+	#slider input{
+		width: 175px;
+	}
+}
+
+/*-----------------------------------------------------Thses queries are for mobile screens-------------------------------*/
+
+@media screen and (max-width: 420px)
+{
+	#logo{
+		margin:0px;
+		padding: 0px 0px 0px 47px;
+	}
+
+	#profile{
+		width: 80%;
+	}
+
+	#profile-image{
+		width: 80px;
+	}
+
+	#bell-icon{
+	width: 80px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+	}
+	
+	#logo-image{
+		width: 15%;
+	}
+	#logo-name{
+		width: 45%;
+	}
+
+	#search-span{
+		margin-left: 25px;
+	}
+
+	#control-button{
+	width: 220px;
+    margin: auto;
+    margin-top: 25px;
+    margin-right: 101px;
+	}
+
+	#control-button li i{
+		font-size: 1rem;
+	}
+
+	#player{
+		width: 313px;
+		margin-left: 88px;
+    	margin-top: -32px;
+	}
+
+	#player li i{
+	font-size: 2rem;
+	}
+
+	#slider{
+		padding: 0px 0px 0px 0px;
+    	/* margin: auto; */
+    	margin-top: -65px;
+    	margin-left: 103px;
+	}
+
+	#slider input{
+		width: 175px;
+	}
+
+	#floating-div a h3{
+		margin-right: 4px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 380px)
+{	
+	#logo{
+		margin:0px;
+		padding: 0px 0px 0px 47px;
+	}
+
+	#profile{
+		width: 80%;
+	}
+
+	#profile-image{
+		width: 80px;
+	}
+
+	#bell-icon{
+	width: 80px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+	}
+	
+	#logo-image{
+		width: 15%;
+	}
+	#logo-name{
+		width: 45%;
+	}
+
+	#search-span{
+		margin-left: 25px;
+	}
+
+	#control-button{
+	width: 220px;
+    margin: auto;
+    margin-top: 13px;
+    margin-right: 92px;
+	}
+
+	#control-button li i{
+		font-size: 1rem;
+	}
+
+	#player{
+		width: 313px;
+		margin-left: 60px;
+    	margin-top: -36px;
+	}
+	#player li i{
+	font-size: 2rem;
+	}
+
+	#slider{
+		padding: 0px 0px 0px 0px;
+    /* margin: auto; */
+    	margin-top: -56px;
+    	margin-left: 77px;
+	}
+
+	#slider input{
+		width: 175px;
+	}
+	#floating-div a h3{
+		margin-right: 4px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width:370px)
+{
+	#control-button{
+		margin-right: 79px;
+	}
+}
+
+@media screen and (max-width:340px)
+{
+	#logo{
+		margin:0px;
+		padding: 0px 0px 0px 42px;
+	}
+
+	#profile{
+		width: 80%;
+	}
+
+	#profile-image{
+		width: 80px;
+	}
+
+	#bell-icon{
+	width: 80px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+	}
+	
+	#logo-image{
+		width: 23%;
+	}
+	#logo-name{
+		width: 60%;
+	}
+
+	#search-span{
+		margin-left: 25px;
+	}
+
+	#floating-div{
+		height: 80px;
+	}
+
+	#control-button{
+	width: 220px;
+    margin: auto;
+    margin-top: 0px;
+    margin-right: 60px;
+	}
+
+	#control-button li i{
+		font-size: 1rem;
+	}
+
+	#player{
+		width: 313px;
+		margin-left: 37px;
+	}
+	#player li i{
+	font-size: 2rem;
+	}
+
+	#slider{
+		padding: 0px 0px 0px 0px;
+    	/* margin: auto; */
+    	margin-top: -56px;
+    	margin-left: 63px;
+	}	
+	#slider input{
+		width: 157px;
+	}
+
+	#floating-div a h3{
+		margin-right: 4px;
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width:290px)
+{
+	#logo{
+		margin:0px;
+		padding: 14px 0px 0px 23px;
+	}
+	#logo-image{
+		width: 30%;
+	}
+	#logo-name{
+		width: 60%;
+	}
+}
